@@ -1,0 +1,147 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: Lexend Deca;
+    src: url(./Lexend_Deca/LexendDeca-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Big Shoulders Display;
+    src: url(./Big_Shoulders_Display/BigShouldersDisplay-VariableFont_wght.ttf);
+}
+
+
+
+.icon img{
+    height: 30px;
+    width: 50px;
+}
+
+@media screen and (max-width: 1440px) {
+  .sedans, .suv, .luxury{
+    padding: 40px;
+    width: 250px;
+}  
+
+    .para{
+    margin-top: 30px;
+    color:  hsla(0, 0%, 100%, 0.75);
+    font-family: Lexend Deca ;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+    .heading{
+    margin-top: 30px;
+    color:  hsl(0, 0%, 95%);
+    font-family: Big Shoulders Display;
+    font-weight: 400;
+}
+
+
+    button{
+    width: 120px;
+    margin-top: 70px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0);
+    border-radius: 50px;
+    color:  hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+}
+
+body{
+    background-color:  hsl(0, 0%, 95%);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+main{
+    box-sizing: border-box;
+    display: flex; 
+}
+
+
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.suv{
+    background-color: hsl(184, 100%, 22%);
+   
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+button:hover{
+    background-color: rgba(211, 210, 210, 0.61);
+}
+
+@media  screen and (max-width: 620px) {
+    main{
+        flex-direction: column;
+    }
+
+    .sedans, .suv, .luxury{
+    padding: 25px;
+    width: 400px;
+}
+
+    .para{
+    margin-top: 10px;
+    color:  hsla(0, 0%, 100%, 0.75);
+    font-family: Lexend Deca ;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+    .heading{
+    margin-top: 10px;
+    color:  hsl(0, 0%, 95%);
+    font-family: Big Shoulders Display;
+    font-weight: 400;
+}
+
+    button{
+    width: 120px;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0);
+    border-radius: 50px;
+    color:  hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+    .sedans{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .luxury{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+}
